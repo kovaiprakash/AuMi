@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My First Website</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <title>AuMi | Mobility</title>
+  <style>
+    body {
+      margin: 0; font-family: Arial, sans-serif; line-height: 1.6; background: #f4f4f4;
+    }
+    header {
+      background: #AEAEAE; color: #fff; padding: 1rem 0; text-align: center;
+    }
+    nav a {
+      color: white; margin: 0 15px; text-decoration: none;
+    }
+    section {
+      padding: 2rem; max-width: 900px; margin: auto;
+    }
+    .project {
+      background: white; padding: 1rem; margin-bottom: 1rem; border-radius: 5px;
+    }
+    footer {
+      text-align: center; padding: 1rem; background: #333; color: white;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, World!</h1>
-  <p>This is my website hosted on GitHub Pages.</p>
+  <header>
+    <img src="aumi_logo_grey.png" alt="Logo" style="height: 100px; width: 310px; object-fit: cover;">
+    <div>
+    <h1>AuMi Robotics and Mobility Solutions</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+	</div>
+  </header>
+
+  <section id="about">
+    <h2>About AuMi</h2>
+    <p>Founded in 2025 with the aim of providing solutions to the Automotive domain especially in the area of electrification.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>AuMi Radiance eBike</h3>
+      <p>Building the eBike prototype with the customized frame design, inhouse developed batteries, DC Motor, control unit for Battery control and motor control.</p>
+      <a href="https://github.com/yourusername/project" target="_blank">View on GitHub</a>
+    </div>
+    <!-- Add more projects as needed -->
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:aumitechnologies@gmail.com">aumitechnologies@gmail.com</a></p>
+    <p>LinkedIn / Twitter / GitHub links here</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AuMi. All rights reserved.</p>
+  </footer>
 </body>
 </html>
