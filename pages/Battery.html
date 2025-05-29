@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Battery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../about.html">About</a>
+    <a href="BMS.html">BMS</a>
+    <a href="Motor_Control.html">Motor Control</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Lithium ion battery details</h1>
+    <p>A 48V 15Ah lithium-ion battery pack, often configured as 13S6P (13 cells in series, 6 in parallel), is a rechargeable battery pack with a nominal voltage of 48V and a capacity of 15Ah. It typically uses 18650 type cells and delivers 720Wh of energy. These packs are commonly used in electric bikes, scooters, and other applications requiring a high-energy density battery. 
+
+
+<h3>Key Features:</h3>
+
+<ul>
+  <li>Voltage: 48V nominal.</li>
+  <li>Capacity: 15Ah (15,000 mAh).</li>
+  <li>Energy: 720Wh (48V * 15Ah).</li>
+  <li>Cell Type: Commonly 18650, though other types like 21700 are also used.</li>
+  <li>Configuration: 13S6P (13 cells in series, 6 in parallel), but can vary.</li>
+  <li>Applications: Electric bikes, e-scooters, solar applications, robots</li>
+</ul>
+
+
+
+<h3>1. Basic Cell Configuration</h3>
+
+Most lithium-ion cells are 3.7V nominal (like 18650 cells), and the capacity varies (e.g., 2000mAh to 3500mAh).
+<br>
+<b>Target:</b> 48V (nominal) and 15Ah (capacity)
+<br>
+<b>Voltage Setup:</b>
+<br>
+    48V ÷ 3.7V ≈ 13 cells in series → 13S
+<br>
+<br>
+<b>Capacity Setup:</b>
+<br>
+    To get 15Ah, divide 15Ah by the Ah of the individual cell.
+<br>
+<b>Example using 3.0Ah (3000mAh) cells:</b>
+<br>
+    15Ah ÷ 3.0Ah = 5 cells in parallel → 5P
+<br>
+<br>
+<b>Final Configuration:</b>
+<br>
+13S5P → 13 cells in series, each series made of 5 cells in parallel.
+<br>
+
+<h3>2. Total Number of Cells Needed</h3>
+
+    13 (S) × 5 (P) = 65 cells
+
+	
+	</p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 AuMi. All rights reserved.
+  </footer>
+
+</body>
+</html>
